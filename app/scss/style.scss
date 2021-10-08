@@ -1,0 +1,110 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+//start header
+.header__inner {
+   display: flex;
+   padding: 26px 0;
+   justify-content: space-between;
+}
+.header__box-wrapper {
+   display: flex;
+   align-items: center;
+}
+.header__text {
+   width: 181px;
+   margin-left: 46px;
+}
+.header__info {
+   &-phone {
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         background-image: url(../images/phone.svg);
+         background-repeat: no-repeat;
+         width: 27px;
+         height: 27px;
+         left: -6px;
+      }
+   }
+   &-mail {
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         background-image: url(../images/mail.svg);
+         background-repeat: no-repeat;
+         width: 20px;
+         height: 20px;
+         left: 0;
+      }
+   }
+   a {
+      display: block;
+      padding-left: 32px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000;
+      & + a {
+         margin-top: 9px;
+      }
+   }
+}
+.header__btn {
+   margin-left: 41px;
+   button {
+      font-size: 18px;
+      line-height: 22px;
+      color: #fff;
+      padding: 13px 25px 15px;
+      background-color: #f2264d;
+      box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+   }
+}
+.menu__list {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 37px 0;
+   margin-bottom: 15px;
+   border-top: 1px solid #c4c4c4;
+   a {
+      font-size: 20px;
+      line-height: 24px;
+      color: #a7a9ac;
+   }
+}
+.header__content {
+   min-height: 525px;
+   &-box {
+      padding-top: 135px;
+      margin-left: 115px;
+      color: #fff;
+   }
+}
+.header__box-title {
+   font-size: 55px;
+   line-height: 136.4%;
+   margin-bottom: 30px;
+}
+.header__box-text {
+   font-size: 20px;
+   line-height: 150%;
+   width: 417px;
+}
+.header__company{
+   padding: 78px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin-bottom: 48px;
+   img{
+      background-size: cover;
+   }
+}
+//end header
+
+@import "midia";
