@@ -56,13 +56,8 @@
 .header__btn {
    margin-left: 41px;
    button {
-      font-size: 18px;
-      line-height: 22px;
       color: #fff;
-      padding: 13px 25px 15px;
-      background-color: #f2264d;
-      box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
+      background-color: #0C4C8A;
    }
 }
 .menu__list {
@@ -74,11 +69,15 @@
    a {
       font-size: 20px;
       line-height: 24px;
-      color: #a7a9ac;
+      color: #0C4C8A;
+      font-weight: 700;
    }
 }
 .header__content {
    min-height: 525px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
    &-box {
       padding-top: 135px;
       margin-left: 115px;
@@ -87,6 +86,7 @@
 }
 .header__box-title {
    font-size: 55px;
+   font-weight: 700;
    line-height: 136.4%;
    margin-bottom: 30px;
 }
@@ -95,16 +95,186 @@
    line-height: 150%;
    width: 417px;
 }
-.header__company{
+.header__company {
    padding: 78px 0;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
    margin-bottom: 48px;
-   img{
+   img {
       background-size: cover;
    }
 }
 //end header
+//start automat-system
+.automat-system {
+   min-height: 850px;
+   background-color: #f6f6f6;
+   padding: 63px 0;
+   &__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      color: #383838;
+      max-width: 695px;
+      margin-bottom: 76px;
+   }
+}
+.automat-system__inner {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 120px 53px;
+}
+.automat-system__item {
+   &-title {
+      height: 70px;
+      padding-left: 110px;
+      padding-bottom: 30px;
+      margin-bottom: 70px;
+      font-size: 24px;
+      line-height: 29px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 70px;
+         height: 70px;
+         left: 0;
+         top: 0;
+         background-repeat: no-repeat;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: -30px;
+         width: 150px;
+         height: 2px;
+         background-color: #0c4c8a;
+      }
+   }
+   &-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #464646;
+   }
+}
+
+.item__title--icon-1::before {
+   background-image: url(../images/item-1.svg);
+}
+.item__title--icon-2::before {
+   background-image: url(../images/item-2.svg);
+}
+.item__title--icon-3::before {
+   background-image: url(../images/item-3.svg);
+}
+.item__title--icon-4::before {
+   background-image: url(../images/item-4.svg);
+}
+//end automat-system
+//start geography
+.geography {
+   min-height: 529px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   &__wrapper {
+      padding: 66px 0 88px 100px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 22px;
+   }
+}
+.geography {
+   &__title {
+      font-size: 48px;
+      line-height: 59px;
+      font-weight: 700;
+      margin-bottom: 30px;
+   }
+   &__text {
+      max-width: 486px;
+      p {
+         font-weight: 600;
+         margin-bottom: 30px;
+         & + p {
+            font-weight: 400;
+         }
+      }
+   }
+}
+//end geography
+//start numbers
+.numbers {
+   background-color: #f6f6f6;
+   &__inner {
+      padding: 100px 120px 100px 100px;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.numbers__left {
+   max-width: 370px;
+   &-title {
+      color: #383838;
+      width: 280px;
+      font-size: 48px;
+      line-height: 59px;
+      font-weight: 700;
+      padding-bottom: 13px;
+      margin-bottom: 30px;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: 0px;
+         width: 150px;
+         height: 2px;
+         background-color: #0c4c8a;
+      }
+   }
+   &-text {
+      font-size: 20px;
+      line-height: 24px;
+      color: #464646;
+   }
+}
+.numbers__rigth {
+   display: flex;
+   flex-wrap: wrap;
+   width: 50%;
+}
+.numbers__item {
+   max-width: 200px;
+   &:first-child {
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 25px;
+         height: 129px;
+         background: #c4c4c4;
+         bottom: 0;
+         left: -26px;
+      }
+   }
+   &-number {
+      padding-left: 16px;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 88px;
+      color: #0c4c8a;
+   }
+   &-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #464646;
+   }
+}
+//end numbers
 
 @import "midia";
