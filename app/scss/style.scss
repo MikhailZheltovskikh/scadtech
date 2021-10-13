@@ -57,7 +57,7 @@
    margin-left: 41px;
    button {
       color: #fff;
-      background-color: #0C4C8A;
+      background-color: #0c4c8a;
    }
 }
 .menu__list {
@@ -69,7 +69,7 @@
    a {
       font-size: 20px;
       line-height: 24px;
-      color: #0C4C8A;
+      color: #0c4c8a;
       font-weight: 700;
    }
 }
@@ -276,5 +276,66 @@
    }
 }
 //end numbers
+//start footer
+.footer {
+   background-color: #0c4c8a;
+}
+.footer__top {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 100px;
+   padding-bottom: 26px;
+   border-bottom: 1px solid #fff;
+   margin-bottom: 21px;
+   a {
+      color: #fff;
+   }
+}
+.footer__info-phone::after {
+   background-image: url(../images/phone-footer.svg);
+}
+.footer__info-mail::after {
+   background-image: url(../images/mail-footer.svg);
+}
+.footer__bottom {
+   margin-bottom: 25px;
+   padding-right: 45px;
+   display: flex;
+   justify-content: space-between;
+}
+.footer__bottom-box {
+   display: flex;
+}
+.footer__menu {
+   margin-right: 120px;
+}
+.footer__list {
+   border: none;
+   display: block;
+   padding: 0;
+   margin-bottom: 0;
+   li + li {
+      margin-top: 12px;
+   }
+   a {
+      color: #a7a9ac;
+   }
+}
+.footer__bottom-text,
+.footer__bottom-adderss {
+   max-width: 198px;
+   line-height: 170.4%;
+   font-size: 14px;
+   color: #fff;
+}
+.footer__copy {
+   padding-bottom: 30px;
+   font-size: 10px;
+   line-height: 12px;
+   color: #e7e7e7;
+}
+//end footer
 
 @import "midia";
