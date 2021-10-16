@@ -61,15 +61,13 @@
       background-color: #0c4c8a;
    }
 }
-.menu{
-
+.menu {
    padding: 37px 0;
 }
 .menu__list {
    display: flex;
    justify-content: space-evenly;
-   
-   
+
    a {
       font-size: 20px;
       line-height: 24px;
@@ -84,7 +82,6 @@
    background-position: center;
    &-box {
       padding-top: 135px;
-      margin-left: 115px;
       color: #fff;
    }
 }
@@ -127,7 +124,6 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 120px 53px;
-   
 }
 .automat-system__item {
    &-title {
@@ -157,12 +153,6 @@
          background-color: #0c4c8a;
       }
    }
-   &-text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      color: #464646;
-   }
 }
 
 .item__title--icon-1::before {
@@ -185,7 +175,7 @@
    background-repeat: no-repeat;
    background-position: center;
    &__wrapper {
-      padding: 66px 0 88px 100px;
+      padding: 66px 0 88px;
       color: #fff;
       font-size: 18px;
       line-height: 22px;
@@ -214,7 +204,7 @@
 .numbers {
    background-color: #f6f6f6;
    &__inner {
-      padding: 100px 120px 100px 100px;
+      padding: 100px 0;
       display: flex;
       justify-content: space-between;
    }
@@ -222,11 +212,7 @@
 .numbers__left {
    max-width: 370px;
    &-title {
-      color: #383838;
       width: 280px;
-      font-size: 48px;
-      line-height: 59px;
-      font-weight: 700;
       padding-bottom: 13px;
       margin-bottom: 30px;
       position: relative;
@@ -267,16 +253,6 @@
    }
    &-number {
       padding-left: 16px;
-      font-weight: 700;
-      font-size: 72px;
-      line-height: 88px;
-      color: #0c4c8a;
-   }
-   &-text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      color: #464646;
    }
 }
 //end numbers
@@ -332,8 +308,7 @@
    font-size: 14px;
    color: #fff;
 }
-.footer__bottom-adderss{
-
+.footer__bottom-adderss {
    text-align: right;
 }
 .footer__copy {
@@ -343,5 +318,122 @@
    color: #e7e7e7;
 }
 //end footer
+
+//start company
+.company {
+   background-color: #f6f6f6;
+   padding: 50px 0 70px;
+   margin-bottom: 30px;
+   &__title {
+      margin-bottom: 40px;
+   }
+   &__text {
+      padding-left: 260px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 200px;
+         height: 2px;
+         background-color: #0c4c8a;
+      }
+      p {
+         max-width: 660px;
+      }
+      p + p {
+         margin-top: 25px;
+      }
+   }
+}
+
+//end company
+//start priorities
+.priorities {
+   padding: 50px 0 30px;
+   margin-bottom: 50px;
+   &__wrapper {
+      padding: 0 100px;
+   }
+   &__inner {
+      margin-top: 80px;
+   }
+}
+.priorities__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   & + .priorities__item {
+      margin-top: 30px;
+   }
+}
+.priorities__item-left {
+   max-width: 421px;
+}
+.priorities__item-title {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.subtitle {
+   margin-left: 20px;
+   font-size: 36px;
+   line-height: 44px;
+   font-weight: 700;
+   color: #383838;
+}
+.priorities__item__text {
+   width: 300px;
+   font-size: 13px;
+   line-height: 16px;
+   color: #464646;
+   font-weight: 400;
+   span {
+      font-weight: 700;
+   }
+}
+.priorities__item-right {
+   width: 376px;
+   height: 167px;
+   img {
+      display: inline-block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+}
+
+//end priorities
+//start partners
+.partners {
+   padding: 60px 0 90px;
+   background-color: #f6f6f6;
+   &__title {
+      margin-bottom: 70px;
+   }
+}
+.partners__inner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.partners__item {
+   max-width: 334px;
+   margin-bottom: 80px;
+}
+.partners__item-title {
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 27px;
+   color: #383838;
+   padding: 15px 0;
+}
+.partners__item-text {
+   font-size: 13px;
+   line-height: 16px;
+   color: #464646;
+}
+//end partners
 
 @import "midia";
