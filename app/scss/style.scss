@@ -58,7 +58,7 @@
    margin-left: 41px;
    button {
       color: #fff;
-      background-color: #0c4c8a;
+      background-color: $blue;
    }
 }
 .menu {
@@ -71,7 +71,7 @@
    a {
       font-size: 20px;
       line-height: 24px;
-      color: #0c4c8a;
+      color: $blue;
       font-weight: 700;
    }
 }
@@ -109,7 +109,7 @@
 //end header
 //start automat-system
 .automat-system {
-   background-color: #f6f6f6;
+   background-color: $bg;
    padding: 63px 0;
    &__title {
       font-weight: 700;
@@ -150,7 +150,7 @@
          bottom: -30px;
          width: 150px;
          height: 2px;
-         background-color: #0c4c8a;
+         background-color: $blue;
       }
    }
 }
@@ -202,7 +202,7 @@
 //end geography
 //start numbers
 .numbers {
-   background-color: #f6f6f6;
+   background-color: $bg;
    &__inner {
       padding: 100px 0;
       display: flex;
@@ -223,7 +223,7 @@
          bottom: 0px;
          width: 150px;
          height: 2px;
-         background-color: #0c4c8a;
+         background-color: $blue;
       }
    }
    &-text {
@@ -258,7 +258,7 @@
 //end numbers
 //start footer
 .footer {
-   background-color: #0c4c8a;
+   background-color: $blue;
 }
 .footer__top {
    margin-top: 30px;
@@ -321,7 +321,7 @@
 
 //start company
 .company {
-   background-color: #f6f6f6;
+   background-color: $bg;
    padding: 50px 0 70px;
    margin-bottom: 30px;
    &__title {
@@ -337,7 +337,7 @@
          left: 0;
          width: 200px;
          height: 2px;
-         background-color: #0c4c8a;
+         background-color: $blue;
       }
       p {
          max-width: 660px;
@@ -408,7 +408,7 @@
 //start partners
 .partners {
    padding: 60px 0 90px;
-   background-color: #f6f6f6;
+   background-color: $bg;
    &__title {
       margin-bottom: 70px;
    }
@@ -435,5 +435,143 @@
    color: #464646;
 }
 //end partners
+//start product
+.product {
+   background-color: $bg;
+   padding: 70px 0;
+   margin-bottom: 83px;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.product__item {
+   max-width: 527px;
+}
+.product__item-text {
+   font-size: 14px;
+   line-height: 17px;
+   color: #000;
+   margin-top: 29px;
+   margin-left: 90px;
+   padding-left: 30px;
+   border-left: 2px solid $blue;
+}
+//end product
+//start products
+.products {
+   margin-bottom: 56px;
+}
+.products__inner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: -11px;
+}
+.products__item {
+   width: 33.3333%;
+   margin-bottom: 66px;
+   padding: 11px;
+}
+.products__item-wrapper {
+   img {
+      border-top: 10px solid $blue;
+      margin-bottom: 23px;
+   }
+}
+.products__item-box {
+   padding-left: 27px;
+   border-left: 2px solid $blue;
+   min-height: 200px;
+}
+.products__box-title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 29px;
+   color: #383838;
+   margin-bottom: 23px;
+}
+.products__box-text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: #000;
+}
+//end products
+// start documentation
+.documentation {
+   margin-top: 20px;
+   margin-bottom: 80px;
+   &__title {
+      padding-bottom: 22px;
+      margin-bottom: 70px;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 200px;
+         height: 2px;
+         background-color: $blue;
+         bottom: 0;
+         left: 0;
+      }
+   }
+}
+.documentation__inner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-left: -20px;
+}
+.documentation__item {
+   background-color: $bg;
+   max-width: 558px;
+   margin-bottom: 40px;
+   color: #383838;
+   margin-left: 20px;
+}
+.documentation__wrapper {
+   padding: 26px 29px;
+   display: flex;
+   justify-content: space-between;
+}
+.documentation__item-img {
+   img {
+      width: 70px;
+      height: 70px;
+   }
+}
+.documentation__item-box{
+   max-width: 403px;
+   margin-left: 27px;
+}
+.documentation__item-title,
+.documentation__item-date,
+.documentation__item-limit {
+   margin-bottom: 26px;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 700;
+   p + p {
+      margin-top: 8px;
+   }
+}
+.documentation__item-date {
+   color: #a7a9ac;
+   font-weight: 400;
+   margin-bottom: 7px;
+}
+.documentation__item-text {
+   font-size: 14px;
+   line-height: 17px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+.documentation__item-limit{
+   margin-bottom: 0;
+   font-weight: 400;
+   color: #a7a9ac;
+}
+//end documentation
 
 @import "midia";
