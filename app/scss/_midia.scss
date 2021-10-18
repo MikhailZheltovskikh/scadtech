@@ -1,7 +1,49 @@
+@media (max-width: 1004px){
+   .header__company{
+      padding: 50px 0 25px;
+      justify-content: center;
+   }
+   .header__company-item{
+      margin-bottom: 40px;
+   }
+   .header__company-item{
+      margin-left: 40px;
+   }
+}
 @media (max-width: 960px){
    .header__text,
    .footer__bottom-text{
       display: none;
+   }
+   .header__company{
+      margin-bottom: 20px;
+   }
+   
+}
+@media (max-width: 880px){
+   .automat-system__item{
+      width: 100%;
+   }
+   .numbers__inner{
+      display: block;
+      padding: 50px 0;
+   }
+   .numbers__left,
+   .numbers__rigth{
+      display: block;
+      width: 100%;
+   }
+   .numbers__left{
+      margin-bottom: 20px;
+   }
+   .numbers__item:first-child::before{
+      display: none;
+   }
+   .numbers__item-number{
+      padding-left: 0;
+   }
+   .numbers__item{
+      width: 100%;
    }
 }
 
@@ -50,9 +92,29 @@
    .header__btn{
       display: none;
    }
+   .header__content {
+      min-height: 400px;
+   }
+   .header__content-box {
+      padding-top: 60px;
+   }
+   .header__box-title,
+   .geography__title {
+      font-size: 45px;
+   }
+   .header__box-text{
+      font-size: 15px;
+   }
+   .geography__text{
+      font-size: 15px;
+   }
+
 
 }
 @media (max-width: 560px){
+   .menu{
+      padding: 0;
+   }
    .header__info{
       display: none;
    }
@@ -84,7 +146,50 @@
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
    }
-
+   .automat-system__title {
+      font-size: 30px;
+      margin-bottom: 40px;
+   }
+   .automat-system__item{
+      margin-bottom: 50px;
+   }
+   .automat-system__item-title{
+      font-size: 20px;
+   }
+   .automat-system__item-text{
+      font-size: 14px;
+   }
+}
+@media (max-width: 450px){
+   .automat-system {
+      padding: 40px 0;
+  }
+   .automat-system__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+   }
+}
+@media (max-width: 380px){
+   .header__content {
+      min-height: 350px;
+  }
+   .header__box-title,
+   .geography__title,
+   .numbers__left-title {
+      font-size: 35px;
+   }
+   .numbers__left-text{
+      font-size: 15px;
+   }
+   .header__box-text {
+      font-size: 15px;
+   }
+   .geography__btn{
+      button{
+         width: 100%;
+      }
+   }
+   
 }
 
 

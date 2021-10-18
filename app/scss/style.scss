@@ -94,17 +94,21 @@
 .header__box-text {
    font-size: 20px;
    line-height: 150%;
-   width: 417px;
+   max-width: 417px;
 }
 .header__company {
-   padding: 78px 0;
+   padding: 78px 0 58px;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
    margin-bottom: 48px;
-   img {
-      background-size: cover;
-   }
+   margin-left: -15px;
+   flex-wrap: wrap;
+   
+}
+.header__company-item {
+   background-size: cover;
+   margin-left: 15px;
 }
 //end header
 //start automat-system
@@ -121,15 +125,17 @@
    }
 }
 .automat-system__inner {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 120px 53px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: -15px;
 }
 .automat-system__item {
+   width: 50%;
+   margin-bottom: 100px;
+   padding: 0 15px;
    &-title {
-      height: 70px;
       padding-left: 110px;
-      padding-bottom: 30px;
       margin-bottom: 70px;
       font-size: 24px;
       line-height: 29px;
@@ -607,9 +613,6 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       left: 0;
    }
 }
