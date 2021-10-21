@@ -400,8 +400,8 @@
    }
 }
 .priorities__item-right {
-   width: 376px;
-   height: 167px;
+   max-width: 376px;
+   max-height: 167px;
    img {
       display: inline-block;
       background-size: cover;
@@ -481,6 +481,7 @@
 }
 .products__item-wrapper {
    img {
+      width: 100%;
       border-top: 10px solid $blue;
       margin-bottom: 23px;
    }
@@ -587,16 +588,29 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   margin: -10px;
 }
-.clients__item {
-   background-color: $bg;
+.clients__item{
+   padding: 10px;
+   width: 50%;
+   margin-bottom: 20px;
+   
+}
+.clients__item-wrapper {
    max-width: 560px;
-   margin-bottom: 40px;
+   min-height: 627px;
+   background-color: $bg;
    border-bottom: 11px solid $blue;
 }
+
 .clients__item-box {
+   color: #383838;
    padding: 22px 100px 33px 60px;
-   
+   height: 237px;
+}
+.clients__item-box-novgorod,
+.clients__item-box-ediniy{
+   padding-right: 50px;
 }
 .clients__item-address,
 .clients__item-phone,
@@ -616,8 +630,8 @@
       left: 0;
    }
 }
-.clients__item {
-   color: #383838;
+
+.clients__item{
    &-title {
       font-size: 30px;
       line-height: 37px;
@@ -653,8 +667,23 @@
 .clients__item-address{
    margin-bottom: 21px;
 }
+.clients__item-img{
+   img{
+      display: block;
+      width: 100%;
+   }
+}
 
 
 //end clients
+//start link
+.link-btn{
+   display: block;
+   margin-bottom: 20px;
+   &:first-child{
+      padding-top: 20px;
+   }
+}
+//end link
 
 @import "midia";
