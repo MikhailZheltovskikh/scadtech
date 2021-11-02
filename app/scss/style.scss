@@ -59,6 +59,10 @@
    button {
       color: #fff;
       background-color: $blue;
+      &:hover{
+         color: #000;
+         background-color: $bg;
+      }
    }
 }
 .menu {
@@ -73,6 +77,11 @@
       line-height: 24px;
       color: $blue;
       font-weight: 700;
+   }
+}
+.menu__list-top{
+   a:hover{
+      color: #a7a9ac;
    }
 }
 .header__content {
@@ -205,6 +214,12 @@
       }
    }
 }
+.geography__btn{
+   button:hover{
+      color: #fff;
+      background-color: $blue;
+   }
+}
 //end geography
 //start numbers
 .numbers {
@@ -294,6 +309,7 @@
 }
 .footer__menu {
    margin-right: 120px;
+   padding: 0;
 }
 .footer__list {
    border: none;

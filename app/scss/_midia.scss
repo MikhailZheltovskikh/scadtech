@@ -111,6 +111,12 @@
          }
       }
    }
+   .lock{
+      overflow: hidden;
+   }
+   .menu{
+      height: 93px;
+   }
    .menu__list-top {
       display: none;
       padding: 25px 0;
@@ -252,11 +258,13 @@
    }
 }
 @media (max-width: 470px) {
+   .header__company-item {
+      margin-left: 0;
+      display: block;
+      margin: 0 auto 40px;
+   }
    .header__company {
       display: block;
-   }
-   .header__company-item {
-      margin: 0 auto 40px;
    }
 }
 @media (max-width: 450px) {

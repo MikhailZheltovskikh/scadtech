@@ -47,9 +47,36 @@ body {
    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
    border-radius: 10px;
    cursor: pointer;
+   border: none;
 }
 .menu__btn {
    display: none;
+}
+.menu__btn {
+   &.active {
+      position: relative;
+      div {
+         &:nth-child(1) {
+            transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 3px;
+            transition: all .3s;
+         }
+         &:nth-child(3) {
+            transform: rotate(-45deg);
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: -2px;
+            transition: all .3s;
+         }
+         &:nth-child(2) {
+            display: none;
+         }
+      }
+   }
 }
 .title {
    color: #383838;
